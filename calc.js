@@ -10,7 +10,7 @@ function calcArea() {
 		$(".thermo_tons").html(thermotons);
 		
 	} else {
-        
+        $(".thermo_tons").html("--");
     }
 }
 
