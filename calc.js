@@ -1,5 +1,7 @@
+// Copyright 2018 Regent Tek Industries Inc.
+
 function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 function calcArea() {
@@ -12,10 +14,10 @@ function calcArea() {
 		var thermotons = (thermolbs / 2000).toFixed(2);
 		$(".thermo_tons").html(numberWithCommas(thermotons));
 		$(".thermo_lbs").html(numberWithCommas(thermolbs));
-		
+
 	} else {
-        $(".thermo_tons, .thermo_lbs").html("--");
-    }
+		$(".thermo_tons, .thermo_lbs").html("--");
+	}
 }
 
 $(".thermo_tons, .thermo_lbs").html("--");
