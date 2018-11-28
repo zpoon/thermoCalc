@@ -3,7 +3,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 <body>
-        <div class="card text-white bg-dark mb-3">
+        <div class="card text-white bg-info mb-3">
                 <div class="card-header">Thermoplastic calculator</div>
                 <div class="card-body">
                   <h5 class="card-title">Use this simple calculator to estimate thermoplastic material needed for a particular specification and job.</h5>
@@ -14,7 +14,7 @@
                                   <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-lg">Thickness (mm)</span>
                                   </div>
-                                  <input type="number" class="form-control ips" id="thickness" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                                  <input type="number" class="form-control ips" placeholder="90" id="thickness" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                                 </div>
                           </div>
                           <div class="col-sm">
@@ -22,7 +22,7 @@
                                   <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-lg">Width (inches)</span>
                                   </div>
-                                  <input type="number" class="form-control ips" id="width" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                                  <input type="number" class="form-control ips" placeholder="4" id="width" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                                 </div>
                           </div>
                           <div class="col-sm">
@@ -30,15 +30,16 @@
                                   <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-lg">Length (feet)</span>
                                   </div>
-                                  <input type="number" class="form-control ips" id="length" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                                  <input type="number" class="form-control ips" placeholder="feet" id="length" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                                 </div>
                           </div>
                         </div>
                       </div>  
-                      <div class="container p-5">
+                      <div class="container mb-5">
                       <div class="row">  
                           <div class="col-sm">
                       <h1><span class="thermo_tons"></span> estimated tons</h1>
+                      <span class="thermo_lbs small"></span> estimated lbs
                       </div>
                       </div>
                       </div>
